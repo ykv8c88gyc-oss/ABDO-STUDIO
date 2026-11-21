@@ -14,19 +14,21 @@ export default function Navbar() {
     { name: "Contact", path: "/contact" },
   ];
 
-  const closeMenu = () => {
-    setOpen(false);
-  };
+  const closeMenu = () => setOpen(false);
 
   return (
     <header className="navbar">
+      <NavLink to="/" className="brand" onClick={closeMenu}>
+        <img
+          src="/four18-logo.jpeg"
+          alt="FOUR18 Digital Studio"
+          className="brand-logo"
+        />
 
-      <NavLink
-        to="/"
-        className="brand"
-        onClick={closeMenu}
-      >
-        ABDO<span>STUDIO.</span>
+        <span>
+          FOUR<span className="brand-number">18</span>
+          <small>DIGITAL STUDIO</small>
+        </span>
       </NavLink>
 
       <button
@@ -52,7 +54,6 @@ export default function Navbar() {
           </NavLink>
         ))}
       </nav>
-
     </header>
   );
 }

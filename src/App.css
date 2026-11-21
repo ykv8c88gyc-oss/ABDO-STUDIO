@@ -1303,3 +1303,135 @@ button {
     opacity: 1;
   }
 }
+/* FOUR18 BRAND LOGO */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 55px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.brand > span {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.brand-number {
+  display: inline;
+  color: #c34bff;
+}
+
+.brand > span small {
+  margin-top: 5px;
+  color: #aaa;
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+/* FOUR18 MINIMAL FOOTER */
+
+.four18-footer {
+  position: relative;
+  padding: 75px 8% 30px;
+  background: #080808;
+  overflow: hidden;
+  text-align: center;
+}
+
+.four18-footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.four18-footer-logo {
+  margin: 0;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.four18-footer-logo span {
+  color: #c34bff;
+}
+
+.four18-footer-tagline {
+  margin: 14px 0 28px;
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.four18-socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.four18-socials a {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c34bff;
+  border: 1px solid rgba(195, 75, 255, 0.3);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.four18-socials a:hover {
+  color: #fff;
+  background: #a020f0;
+  box-shadow: 0 0 20px rgba(160, 32, 240, 0.5);
+  transform: translateY(-4px);
+}
+
+.four18-footer-line {
+  width: 100%;
+  height: 1px;
+  margin: 40px 0 22px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(195, 75, 255, 0.5),
+    transparent
+  );
+}
+
+.four18-copyright {
+  color: #666;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 600px) {
+  .four18-footer {
+    padding: 60px 6% 25px;
+  }
+
+  .four18-footer-logo {
+    font-size: 32px;
+  }
+
+  .four18-footer-tagline {
+    font-size: 12px;
+  }
+
+  .four18-copyright {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
